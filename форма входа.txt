@@ -1,0 +1,47 @@
+﻿<Grid Margin="10">
+
+    <Grid.RowDefinitions>
+
+      <RowDefinition />
+
+      <RowDefinition />
+
+      <RowDefinition />
+
+      <RowDefinition />
+
+      <RowDefinition />
+
+      <RowDefinition />
+
+    </Grid.RowDefinitions>
+
+    <TextBlock Text="Логин:" />
+
+    <TextBox Grid.Row="1" Text="{Binding Login, Mode=OneWayToSource}" />
+
+    <TextBlock Grid.Row="2" Text="Пароль:" />
+
+    <TextBox Grid.Row="3" Text="{Binding Password, Mode=OneWayToSource}" />
+
+    <Button
+
+      Grid.Row="4"
+
+      Margin="3"
+
+      Command="{Binding AuthCommand, Mode=OneTime}"
+
+      Content="Войти" />
+
+    <Button
+
+      Grid.Row="5"
+
+      Margin="3"
+
+      Command="{Binding RegenCommand, Mode=OneTime}"
+
+      Content="Сбросить базу данных" />
+
+  </Grid>
