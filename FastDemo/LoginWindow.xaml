@@ -1,0 +1,39 @@
+﻿<Window
+    x:Class="FastDemo.LoginWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FastDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:FastDemo.ViewModels"
+    Title="Вход"
+    Width="500"
+    Background="Gray"
+    Height="200"
+    d:DataContext="{d:DesignInstance Type=viewmodels:LoginWindowViewModel}"
+    mc:Ignorable="d">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Логин:" Background="#FF5899A5" />
+        <TextBox Grid.Row="1" Text="{Binding Login, Mode=OneWayToSource}" />
+        <TextBlock Grid.Row="2" Text="Пароль:" Background="#FF0EC54B" />
+        <TextBox Grid.Row="3" Text="{Binding Password, Mode=OneWayToSource}" />
+        <Button
+            Grid.Row="4"
+            Margin="105,3,0,3"
+            Command="{Binding AuthCommand, Mode=OneTime}"
+            Content="Войти" Click="Button_Click" Background="#FFBF8A16" HorizontalAlignment="Left" Width="180" />
+        <Button
+            Grid.Row="5"
+            Margin="3"
+            Command="{Binding RegenCommand, Mode=OneTime}"
+            Content="Сбросить базу данных" Background="#FFDE1616" />
+    </Grid>
+</Window>

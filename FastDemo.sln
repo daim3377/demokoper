@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastDemo", "FastDemo\FastDemo.csproj", "{D9EEFBB9-C285-4EBF-8784-A9FC3D26E82C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDB", "EasyDB\EasyDB.csproj", "{A6A3CC39-DB1C-2D9A-6B5C-054A547BC310}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9EEFBB9-C285-4EBF-8784-A9FC3D26E82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EEFBB9-C285-4EBF-8784-A9FC3D26E82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EEFBB9-C285-4EBF-8784-A9FC3D26E82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EEFBB9-C285-4EBF-8784-A9FC3D26E82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A3CC39-DB1C-2D9A-6B5C-054A547BC310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A3CC39-DB1C-2D9A-6B5C-054A547BC310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A3CC39-DB1C-2D9A-6B5C-054A547BC310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A3CC39-DB1C-2D9A-6B5C-054A547BC310}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA9ED698-47F3-4D8A-A0CB-B32C48F06F22}
+	EndGlobalSection
+EndGlobal
